@@ -57,20 +57,41 @@ html {
     font-size: 62.5%;
 }
 
+header div {
+    text-align: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+nav div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav i {
+    width: 10%;
+    font-size: 4vh;
+    margin: 2%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, i {
+h1, h2, h3, h4, h5, h6, p, a, i, label {
     text-decoration: none;
+    color: rgb(225, 239, 230);
 }
 
 h1 {
-    font-size: 7.5rem;
+    text-align: center;
+    width: 100%;
+    font-size: 9rem;
+    background-color: rgb(0, 4, 17, .8);
 }
 
 h2 {
+    text-align: center;
     font-size: 6rem;
 }
 
@@ -113,22 +134,66 @@ header {
 .menu {
     width: 100%;
     height: auto;
-    background-image: url('../img/staff-bartender.jpg');
+    /* background-image: url('../img/staff-bartender.jpg'); */
     background-color: rgb(0, 4, 17);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
+.menu-sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-section {
+margin: 2%;
+width: 43%;
+align-items: center;
+}
+
+.item-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+label {
+    font-size: 2rem;
+}
+
 /* footer section */
+
 footer {
     width: 100%;
     height: 15vh;
-    padding-top: 2.5vh;
+    padding: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
+    align-items: baseline;
+}
+
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright {
+    font-size: 10px;
+    margin-right: 5%;
+    bottom: 0%;
+    /* position: fixed; */
+    align-self: flex-end;
 }
 
 /* mobile media query */
+
 @media (max-width: 428px) {
     /* header section */
     .header-title {

@@ -58,6 +58,23 @@ html {
     font-size: 62.5%;
 }
 
+header div {
+    text-align: center;
+    background-color: rgb(0, 4, 17, .8);
+}
+
+nav div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+nav i {
+    width: 10%;
+    font-size: 4vh;
+    margin: 2%;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -65,9 +82,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, p, a, i {
     text-decoration: none;
+    color: rgb(225, 239, 230);
 }
 
 h1 {
+    width: 100%;
     font-size: 7.5rem;
 }
 
@@ -113,6 +132,12 @@ header {
     background-color: rgb(0, 4, 17);
 }
 
+.gallery img {
+    width: 25%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1%;
+}
 /* about us section */
 .about {
     width: 100%;
@@ -192,20 +217,45 @@ header {
 footer {
     width: 100%;
     height: 15vh;
-    padding-top: 2.5vh;
+    padding: 2.5vh;
     font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 4, 17);
+    color: rgb(225, 239, 230);
+    align-items: baseline;
 }
 
+footer nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.copyright p{
+    font-size: 10px;
+    margin-right: 5%;
+    bottom: 0%;
+
+}
 /* mobile media query */
 @media (max-width: 428px) {
     /* header section */
-    
+    header nav div {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
 
     /* gallery section */
     .gallery {
         height: auto;
     }
-    
+    .gallery img {
+        display: flex;
+        flex-direction: column;
+        width: 98%;
+        margin: 2%
+    }
     /* about us section */
 
     .about {
@@ -249,5 +299,25 @@ footer {
         height: auto;
         padding-top: 2.5vh;
         font-size: 2rem;
+        border: solid blue 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }   
+    .email-signup {
+        display: flex;
+        flex-direction: column;
+    }
+    footer nav {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .copyright p{
+        margin: 0;
     }
 }
